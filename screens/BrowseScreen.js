@@ -19,20 +19,8 @@ export default function BrowseScreen() {
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
       >
-        <View style={styles.welcomeContainer}>
-          <Image
-            source={
-              __DEV__
-                ? require("../assets/images/robot-dev.png")
-                : require("../assets/images/robot-prod.png")
-            }
-            style={styles.welcomeImage}
-          />
-        </View>
+        <Text>Maddy Shoes Here</Text>
       </ScrollView>
-      <View style={styles.tabBarInfoContainer}>
-        <Text style={styles.tabBarInfoText}>Checkout goes here</Text>
-      </View>
     </View>
   );
 }

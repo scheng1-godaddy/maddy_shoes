@@ -1,22 +1,28 @@
 import React from "react";
-import { ScrollView, StyleSheet, Platform, View, Text } from "react-native";
+import {
+  ScrollView,
+  StyleSheet,
+  Platform,
+  View,
+  Text,
+  Image
+} from "react-native";
 import { ExpoLinksView } from "@expo/samples";
 
 export default function CartScreen() {
   return (
-    <View styles={styles.container}>
-      {/* <Text style={styles.textContainer}>Cart listing here</Text> */}
+    <View style={styles.container}>
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
       >
-        <View style={styles.cartListContainer}>
-          <Text>Cart listing here</Text>
+        <View height={30} style={styles.cartListingContainer}>
+          <Text>Cart Listing Here</Text>
         </View>
       </ScrollView>
-      {/* <View style={styles.tabBarInfoContainer}>
+      <View style={styles.checkoutButtonContainer}>
         <Text style={styles.tabBarInfoText}>Checkout goes here</Text>
-      </View> */}
+      </View>
     </View>
   );
 }
@@ -28,16 +34,17 @@ CartScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000"
+    backgroundColor: "#fff"
   },
   contentContainer: {
     paddingTop: 30
   },
-  cartListContainer: {
+  cartListingContainer: {
+    alignItems: "center",
     marginTop: 10,
     marginBottom: 20
   },
-  tabBarInfoContainer: {
+  checkoutButtonContainer: {
     position: "absolute",
     bottom: 0,
     left: 0,
