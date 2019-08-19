@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Maddies Shoes",
-    "slug": "maddy-shoes",
+    "slug": "shawnc8160-maddy-shoes",
     "privacy": "public",
     "sdkVersion": "34.0.0",
     "platforms": [
@@ -25,6 +25,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
