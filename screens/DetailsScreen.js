@@ -8,10 +8,7 @@ export default function DetailsScreen(props) {
    * Go ahead and delete ExpoConfigView and replace it with your content;
    * we just wanted to give you a quick view of your config.
    */
-  console.log("props in DetailsScreen is: ", props);
-  // console.log("");
   const { navigation } = props;
-  console.log("image is: ", navigation.getParam("image", "NA"));
   return (
     <Container>
       <Content>

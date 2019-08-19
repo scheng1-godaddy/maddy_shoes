@@ -6,6 +6,11 @@ import { Button } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function BrowseScreen(props) {
+  // Get global state
+  const { cart, addToCart } = props.screenProps || {
+    cart: null,
+    addToCart: () => null
+  };
   const inventory = [
     {
       id: 1,
@@ -65,7 +70,7 @@ export default function BrowseScreen(props) {
                   }
                   title=" Add"
                   titleStyle={styles.cartButtonTextStyle}
-                  onPress={() => props.navigation.push("Cart", item)}
+                  onPress={() => addToCart(item)}
                 />
               </CardItem>
             </Card>
