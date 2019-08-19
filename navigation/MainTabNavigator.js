@@ -9,6 +9,7 @@ import TabBarIcon from "../components/TabBarIcon";
 import BrowseScreen from "../screens/BrowseScreen";
 import CartScreen from "../screens/CartScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import DetailsScreen from "../screens/DetailsScreen";
 
 const config = Platform.select({
   web: { headerMode: "screen" },
@@ -17,7 +18,8 @@ const config = Platform.select({
 
 const BrowseStack = createStackNavigator(
   {
-    Browse: BrowseScreen
+    Browse: BrowseScreen,
+    Details: DetailsScreen
   },
   config
 );
